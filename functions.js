@@ -1,9 +1,9 @@
 const areaOfCircle = (radius) => {
-    return Math.PI * Math.pow(radius, 2);
+    return (radius) ? Math.PI * Math.pow(radius, 2) : 0;
 }
 
 const checkUpperCaseLetter = (string) => {
-    return /[A-Z]/.test(string[0]);
+    return (string) ? /[A-Z]/.test(string[0]) : false;
 }
 
 

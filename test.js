@@ -18,4 +18,16 @@ describe("Test functions", () => {
         const testString = "lowercase";
         assert.equal(checkUpperCaseLetter(testString), false);
     })
+
+    it('null for radius', () => {
+        const radius = null;
+        const area = areaOfCircle(radius);
+        assert.equal(area, 0)
+    })
+
+    it('should return negative area of circle', () => {
+        const radius = -1;
+        const area = areaOfCircle(radius);
+        assert.equal(area, 3.141592653589793)
+    })
 })
